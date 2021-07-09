@@ -15,20 +15,21 @@ body{
 	padding: inherit; 
 	font-weight: bold; 
 	background-color: #05fcef;
-	font-family: Georgia, Times, "Times New Roman", serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+	/* font-family: Georgia, Times, "Times New Roman", serif; */
 }
 
 .dropdown-item{
-    color: #ffffff; 
+    color: #000000; 
 }
 
 .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:active{
-	background-color:#ffffff; 
-	margin-right: 100px; 
+	background-color:#05fcef; 
+	
 }
 
 .nav-link:hover{
-    background-color:#ffffff;
+    background-color:#05fcef;
 }
 
 .top spacer{
@@ -38,27 +39,60 @@ body{
 .main-content{
     background-color:#05fcef;
     margin-top: 100px;
-    text-align:left;
+    text-align:center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+#active{
+    outline:black;
+    background-color: white;
+    border-color:black;
+    border-style: solid;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .right-menu{
     background-color:#05fcef;
     margin-top: 100px;
+    text-align: center;
+    text-decoration-color: black;
 }
 
 .main image{
     width: 10%;
     height: 10%;
-    text-align:justify;
     float:left;
-    padding: 0 10px 0 0;
 }
 
 p {
     float:top;
-    text-align:justify;
+    text-align:left;
 }
 
 .right image{
     background-color: #05fcef;
+    margin-bottom: 5px;
+}
+
+.right image{
+    text-decoration: none;
+}
+
+.right-link{
+    color:black;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+.right-link:hover{
+    color:black;
+    text-underline-offset: 0%;
+    border:black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
 }
