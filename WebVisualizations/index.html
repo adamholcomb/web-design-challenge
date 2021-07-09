@@ -5,8 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latitude vs Weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    HI
+
+
+    <!--Navbar-->
+    <div class="navigation">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html">Latitude</a>
+          <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  ​
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="temp.html">Max Temperature</a>
+                          <a class="dropdown-item" href="humidity.html">Humidity</a>
+                          <a class="dropdown-item" href="clouds.html">Cloudiness</a>
+                          <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="comparisons.html">Comparisons</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="data.html">Data</a>
+                  </li>
+              </ul>
+          </div>
+        </nav>
+      </div>
+      <h1></h1>
+      <!--Main Content-->
+      <div class="container">
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <div class="main-content">
+                    <h2>Latitude vs Weather</h2>
+                    <img width=50% src="Resources/assets/images/Lat_Temp.png" alt="Latitude vs Temperature correlation" class="main image" float="left"/>
+                    <p>This project shows which weather phoenomena correlate to proximity to the equator. It was completed using python pandas and matplotlib.</p>
+                    <p>The data for the project was pulled from the OpenWeather API. I looked at latitude vs temperature, cloudiness, humidity, and wind speed. For 500 cities real-time as the project was underway in May 2021.</p>
+                </div>
+            </div>
+
+            <!--Right Container-->
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <div class="right-menu">
+                    <h2>Visualizations</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img width=100% src="Resources/assets/images/Lat_Temp.png" alt="Latitude vs Temperature correlation" class="right image"/>
+                        </div>
+                        <div class="col-md-6">
+                            <img width=100% src="Resources/assets/images/Lat_Temp.png" alt="Latitude vs Temperature correlation" class="right image"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img width=100% src="Resources/assets/images/Lat_Temp.png" alt="Latitude vs Temperature correlation" class="right image"/>
+                        </div>
+                        <div class="col-md-6">
+                            <img width=100% src="Resources/assets/images/Lat_Temp.png" alt="Latitude vs Temperature correlation" class="right image"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-1"></div> -->
+        </div>
+      </div>
+
+
 </body>
 </html>
