@@ -96,3 +96,7 @@ p {
 a:hover{
     text-decoration: none;
 }
+
+.data-table{
+    margin-top: 50px;
+}
